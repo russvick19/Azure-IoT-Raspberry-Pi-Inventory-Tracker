@@ -8,6 +8,9 @@
     mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="jsonInfo" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+        <Button Content="Pic" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="100"/>
+        <CaptureElement Name="PreviewControl" Stretch="Uniform" Height="200" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="jsonInfo" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextWrapping="Wrap"
+                   Height="200" Width="200"/>
     </Grid>
 </Page>

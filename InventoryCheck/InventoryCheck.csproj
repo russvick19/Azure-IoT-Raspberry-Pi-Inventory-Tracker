@@ -109,6 +109,10 @@
   <ItemGroup>
     <Content Include="Assets\Cups.jpg" />
     <Content Include="Assets\waterbottle.jpg" />
+    <Content Include="Pictures\1cuptest.jpg" />
+    <Content Include="Pictures\2cuptest.jpg" />
+    <Content Include="Pictures\3cuptest.jpg" />
+    <Content Include="Pictures\4cuptest.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>555207a8-a56b-4b65-ab85-60076a5b76ff</PackageIdentityName>
     <PackageIdentityPublisher>CN=v-ruvick</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>3166C4F05661CB3BF0BB54D87632F28D0B8D3AD494549FE5A36934C5C42DCC92</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B0C212EC9DED7A9EC594BAEF5B48DAF229B76C3B2C1C2E8F2FC296E063523F2C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>555207a8-a56b-4b65-ab85-60076a5b76ff_1.0.0.0_x86__srg72fcw0r234</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>555207a8-a56b-4b65-ab85-60076a5b76ff_srg72fcw0r234!App</RegisteredUserModeAppID>
     <RegisteredPackageID>555207a8-a56b-4b65-ab85-60076a5b76ff</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-30T23:09:25.740</Modified>
+      <Modified>2017-05-31T22:29:55.032</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\InventoryCheck.exe">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\InventoryCheck.exe">
       <PackagePath>entrypoint\InventoryCheck.exe</PackagePath>
-      <Modified>2017-05-30T23:09:24.115</Modified>
+      <Modified>2017-05-31T22:29:47.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-ruvick\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -456,67 +456,83 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-23T06:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Cups.jpg">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Cups.jpg">
       <PackagePath>Assets\Cups.jpg</PackagePath>
       <Modified>2017-05-30T23:09:16.993</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\waterbottle.jpg">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\waterbottle.jpg">
       <PackagePath>Assets\waterbottle.jpg</PackagePath>
       <Modified>2017-05-30T22:59:11.286</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Pictures\1cuptest.jpg">
+      <PackagePath>Pictures\1cuptest.jpg</PackagePath>
+      <Modified>2017-05-31T17:11:32.130</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Pictures\2cuptest.jpg">
+      <PackagePath>Pictures\2cuptest.jpg</PackagePath>
+      <Modified>2017-05-31T19:22:26.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Pictures\3cuptest.jpg">
+      <PackagePath>Pictures\3cuptest.jpg</PackagePath>
+      <Modified>2017-05-31T17:11:32.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Pictures\4cuptest.jpg">
+      <PackagePath>Pictures\4cuptest.jpg</PackagePath>
+      <Modified>2017-05-31T17:11:32.083</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-05-30T22:53:24.205</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-21T00:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\InventoryCheck.xr.xml">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\InventoryCheck.xr.xml">
       <PackagePath>InventoryCheck.xr.xml</PackagePath>
-      <Modified>2017-05-30T23:05:42.250</Modified>
+      <Modified>2017-05-31T22:05:42.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-05-25T16:02:43.610</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-05-30T23:09:25.431</Modified>
+      <Modified>2017-05-31T22:05:44.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\Core\InventoryCheck.exe">
+    <AppxPackagedFile Include="C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\bin\x86\Debug\Core\InventoryCheck.exe">
       <PackagePath>InventoryCheck.exe</PackagePath>
-      <Modified>2017-05-30T23:09:25.730</Modified>
+      <Modified>2017-05-31T22:29:54.993</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

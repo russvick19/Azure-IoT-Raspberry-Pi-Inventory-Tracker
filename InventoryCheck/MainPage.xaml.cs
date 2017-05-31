@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Storage;
-using Windows.Storage.Pickers;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.Xaml.Navigation;
+using Windows.Media.Capture;
+using Windows.System.Display;
+using Windows.Media.MediaProperties;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -29,6 +20,10 @@ namespace InventoryCheck
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        MediaCapture _mediaCapture;
+        DisplayRequest _displayRequest = new DisplayRequest();
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,28 +31,28 @@ namespace InventoryCheck
 
         void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            MakeAnalysisRequest();
         }
 
-        async void MakeAnalysisRequest()
+        async Task MakePredictionRequest(byte[] photoBytes)
         {
             var client = new HttpClient();
 
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "19c6d2aeed4e4cba83bacf9bc98f9f1e");
-            string requestParameters = "visualFeatures=Description";
-            string uri = "https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?" + requestParameters;
+            // Request headers - replace this example key with your valid subscription key.
+            client.DefaultRequestHeaders.Add("Prediction-Key", "72ce1b8d4771440bbed9789b08f4f3ec");
+
+            // Prediction URL - replace this example URL with your valid prediction URL.
+            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/222a4ac1-0a89-42b7-9df8-9bf77a7e4d4d/image?iterationId=19651a29-428a-41da-8839-50ec3667216b";
             HttpResponseMessage response;
-            //testsdf
-            StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/Cups.jpg"));
 
-            byte[] imageToBytes = await ReadFile(file);
+            // Request body. Try this sample with a locally stored image.
+            StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Pictures/2cuptest.jpg"));
 
-            using (var content = new ByteArrayContent(imageToBytes))
+            //byte[] imageToBytes = await ReadFile(file);
+
+            using (var content = new ByteArrayContent(photoBytes))
             {
-                // This example uses content type "application/octet-stream".
-                // The other content types you can use are "application/json" and "multipart/form-data".
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                response = await client.PostAsync(uri, content);
+                response = await client.PostAsync(url, content);
                 string contentString = await response.Content.ReadAsStringAsync();
                 jsonInfo.Text = contentString;
 
@@ -67,20 +62,42 @@ namespace InventoryCheck
                 }
             }
         }
-        public async Task<byte[]> ReadFile(StorageFile file)
+
+        //public async Task<byte[]> ReadFile(StorageFile file)
+        //{
+        //    byte[] fileBytes = null;
+        //    using (IRandomAccessStreamWithContentType stream = await file.OpenReadAsync())
+        //    {
+        //        fileBytes = new byte[stream.Size];
+        //        using (DataReader reader = new DataReader(stream))
+        //        {
+        //            await reader.LoadAsync((uint)stream.Size);
+        //            reader.ReadBytes(fileBytes);
+        //        }
+        //    }
+
+        //    return fileBytes;
+        //}
+
+        
+        async private void Button_Click(object sender, RoutedEventArgs e)
         {
-            byte[] fileBytes = null;
-            using (IRandomAccessStreamWithContentType stream = await file.OpenReadAsync())
+            _mediaCapture = new MediaCapture();
+            await _mediaCapture.InitializeAsync();
+
+            // Prepare and capture photo
+            var lowLagCapture = await _mediaCapture.PrepareLowLagPhotoCaptureAsync(ImageEncodingProperties.CreateUncompressed(MediaPixelFormat.Bgra8));
+
+            var capturedPhoto = await lowLagCapture.CaptureAsync();
+            var softwareBitmap = capturedPhoto.Frame.SoftwareBitmap;
+
+            using (var captureStream = new InMemoryRandomAccessStream())
             {
-                fileBytes = new byte[stream.Size];
-                using (DataReader reader = new DataReader(stream))
-                {
-                    await reader.LoadAsync((uint)stream.Size);
-                    reader.ReadBytes(fileBytes);
-                }
+                await _mediaCapture.CapturePhotoToStreamAsync(ImageEncodingProperties.CreateJpeg(), captureStream);
+
             }
 
-            return fileBytes;
+            byte[] imageByteArray = new byte[] { };
         }
     }
 }

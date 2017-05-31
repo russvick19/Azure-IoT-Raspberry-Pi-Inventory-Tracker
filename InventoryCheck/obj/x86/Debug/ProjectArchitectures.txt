@@ -1,1 +1,1 @@
-c:\users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\InventoryCheck.csproj;x86
+C:\Users\v-ruvick\documents\visual studio 2015\Projects\InventoryCheck\InventoryCheck\InventoryCheck.csproj;x86

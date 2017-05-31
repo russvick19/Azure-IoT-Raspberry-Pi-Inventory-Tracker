@@ -8,7 +8,10 @@
     mc:Ignorable="d"                     >
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:ConnectionId='2' x:Name="jsonInfo" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+        <Button x:ConnectionId='2' Content="Pic"                      HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="100"/>
+        <CaptureElement x:ConnectionId='3' Name="PreviewControl" Stretch="Uniform" Height="200" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:ConnectionId='4' x:Name="jsonInfo" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextWrapping="Wrap"
+                   Height="200" Width="200"/>
     </Grid>
 </Page>
 
